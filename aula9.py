@@ -11,3 +11,18 @@ print(texto.find('deO'))
 print(texto.find('look')) # se a string não existe o meu retorno com o find é o -1
 print ('curso' in texto)
 print(texto.replace('curso','python')) #primeiro argumento é o que eu vou trocar , o segundo é pelo o que eu vou trocar
+print(texto.split(' '))
+print('_'.join(texto))
+
+
+#desafio 22 , nome completo (todo maiusculo e minusculo) quantas letras tem o nome sem os espaços e quantas letras tem o primeireo nome
+
+nome = str(input('digite seu nome '))
+print(len(nome))
+
+print(nome.upper())#lembrar do parentese pois esses argumentos são funções
+print(nome.lower())
+
+nome_alterado = nome.strip()
+print(len(nome_alterado))
+print(len(nome_alterado) - nome_alterado.count(' '))
